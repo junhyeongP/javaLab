@@ -1,43 +1,43 @@
 package sec05.exam01_string_equals;
-
+//class
 public class StringEqualsExample {
-
+//method:¸®ÅÏÅ¸ÀÔ ¸Ş¼Òµå¸í (Å¸ÀÔ ¸Å°³º¯¼ö){//½ÇÇà¹®;} 
 	public static void main(String[] args) {
 		
-		String strVal1 = "ë°•ì¤€í˜•";
-		String strVal2 = "ë°•ì¤€í˜•";
+		String strVal1 = "¹ÚÁØÇü";
+		String strVal2 = "¹ÚÁØÇü";
 		
 		System.out.println("strVal1= "+System.identityHashCode(strVal1));
 		System.out.println("strVal2= "+System.identityHashCode(strVal2));
 		
 		if (strVal1== strVal2) {
-			System.out.println("strVals1ê³¼ strVal2ê°€ ì°¸ì¡°ê°€ ê°™ìŒ");
+			System.out.println("strVals1°ú strVal2°¡ ÂüÁ¶°¡ °°À½");
 		} else {
-			System.out.println("strVals1ê³¼ strVal2ê°€ ì°¸ì¡°ê°€ ë‹¤ë¦„");
+			System.out.println("strVals1°ú strVal2°¡ ÂüÁ¶°¡ ´Ù¸§");
 		}
 		
 		if (strVal1.equals(strVal2)) {
-			System.out.println("strVals1ê³¼ strVal2ê°€ ë¬¸ìì—´ì´ ê°™ìŒ");
+			System.out.println("strVals1°ú strVal2°¡ ¹®ÀÚ¿­ÀÌ °°À½");
 		}
-		
-		String strVal3 = new String("ë°•ì¤€í˜•");
-		String strVal4 = new String("ë°•ì¤€í˜•");
+		//°´Ã¼»ı¼º¹æ¹ı: new¿¬»êÀÚ Å¬·¡½º»ı¼ºÀÚ();
+		String strVal3 = new String("¹ÚÁØÇü");
+		String strVal4 = new String("¹ÚÁØÇü");
 		
 		System.out.println("strVal3= "+System.identityHashCode(strVal3));
 		System.out.println("strVal4= "+System.identityHashCode(strVal4));
 		
-		if (strVal3== strVal4) {//ì£¼ì†Œê°’ì„ ë¹„êµ
-			System.out.println("strVal3ê³¼ strVal4ê°€ ì°¸ì¡°ê°€ ê°™ìŒ");
+		if (strVal3== strVal4) {//ÁÖ¼Ò°ªÀ» ºñ±³
+			System.out.println("strVal3°ú strVal4°¡ ÂüÁ¶°¡ °°À½");
 		} else {
-			System.out.println("strVal3ê³¼ strVal4ê°€ ì°¸ì¡°ê°€ ë‹¤ë¦„");
+			System.out.println("strVal3°ú strVal4°¡ ÂüÁ¶°¡ ´Ù¸§");
 		}
 		
-		if (strVal1.equals(strVal2)) {//ê°ì²´ì˜ ë¬¸ìì—´ì„ ë¹„êµ
-			System.out.println("strVal3ê³¼ strVal4ê°€ ë¬¸ìì—´ì´ ê°™ìŒ");
+		if (strVal1.equals(strVal2)) {//°´Ã¼ÀÇ ¹®ÀÚ¿­À» ºñ±³
+			System.out.println("strVal3°ú strVal4°¡ ¹®ÀÚ¿­ÀÌ °°À½");
 		}
 		
 		int[] score = {83,90,83};
-		int sum=0;//lengthì“°ê¸°
+		int sum=0;//length¾²±â
 		for (int i=0;i<score.length;i++) {
 			sum+= score[i];
 		}
